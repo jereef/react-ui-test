@@ -1,3 +1,4 @@
+const path = require('path');
 module.exports = {
 	core: {
 		builder: 'webpack5',
@@ -5,6 +6,19 @@ module.exports = {
 	webpackFinal: async (config) => {
 		config.stats = 'errors-only';
 		config.resolve.modules.push('src');
+		config.module.rules.push({
+			test: /\,css&/,
+			use: [
+				{
+					loader: 'postcss-loader',
+					options: {
+						ident: 'postcss',
+						plugins: [require('tailwindcss'), require('autoprefixer')],
+					},
+				},
+			],
+			include: path.resolve(__dirname, '../'),
+		});
 		return config;
 	},
 	framework: '@storybook/react',
@@ -16,6 +30,7 @@ module.exports = {
 		'@storybook/addon-links',
 		'@storybook/addon-essentials',
 		'@storybook/addon-a11y',
+		'@react-theming/storybook-addon',
 	],
 	features: {
 		storyStoreV7: false,
