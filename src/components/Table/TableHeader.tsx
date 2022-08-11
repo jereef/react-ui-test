@@ -1,6 +1,6 @@
 import { ITableHeaders } from '../../types/types';
 
-const TableHeader: React.FC<ITableHeaders> = ({ headers }) => {
+export const TableHeader: React.FC<ITableHeaders> = ({ headers }) => {
 	return (
 		<thead>
 			<tr>
@@ -11,4 +11,3 @@ const TableHeader: React.FC<ITableHeaders> = ({ headers }) => {
 		</thead>
 	);
 };
-export default TableHeader;

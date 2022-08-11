@@ -2,7 +2,7 @@ import React from 'react';
 import { IModal } from '../../types/types';
 import * as S from './Modal.styles';
 
-const Modal: React.FC<IModal> = ({
+export const Modal: React.FC<IModal> = ({
 	isOpen,
 	onClose,
 	title,
@@ -48,4 +48,3 @@ const Modal: React.FC<IModal> = ({
 		</S.ModalContainer>
 	);
 };
-export default Modal;

@@ -1,6 +1,6 @@
 import { ITableBody } from '../../types/types';
 
-const TableBody: React.FC<ITableBody> = ({ data }) => {
+export const TableBody: React.FC<ITableBody> = ({ data }) => {
 	return (
 		<tbody>
 			{data.map((row: any, i) => (
@@ -13,4 +13,3 @@ const TableBody: React.FC<ITableBody> = ({ data }) => {
 		</tbody>
 	);
 };
-export default TableBody;

@@ -2,7 +2,7 @@ import { Global, ThemeProvider, ThemeProviderProps } from '@emotion/react';
 import React from 'react';
 import { CreditosTheme as defaultTheme } from '../../themes';
 
-const LibraryThemeProvider: React.FC<ThemeProviderProps> = ({
+export const LibraryThemeProvider: React.FC<ThemeProviderProps> = ({
 	theme = defaultTheme as any,
 	children,
 }) => {
@@ -13,5 +13,3 @@ const LibraryThemeProvider: React.FC<ThemeProviderProps> = ({
 		</ThemeProvider>
 	);
 };
-
-export default LibraryThemeProvider;

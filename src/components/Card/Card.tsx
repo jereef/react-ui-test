@@ -3,7 +3,7 @@ import React from 'react';
 import { ICard } from '../../types/types';
 import * as S from './Card.styles';
 
-const Card: React.FC<ICard> = ({
+export const Card: React.FC<ICard> = ({
 	title,
 	children,
 	isCredit,
@@ -46,5 +46,3 @@ const Card: React.FC<ICard> = ({
 		</S.CardContainer>
 	);
 };
-
-export default Card;
