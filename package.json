@@ -63,7 +63,7 @@
 		"@emotion/babel-plugin": "^11.10.0",
 		"@emotion/react": "^11.10.0",
 		"@emotion/styled": "^11.10.0",
-		"@mdx-js/react": "^1.6.22",
+		"@mdx-js/react": "^2.2.1",
 		"@react-theming/storybook-addon": "^1.1.7",
 		"@rollup/plugin-babel": "^5.3.1",
 		"@rollup/plugin-commonjs": "^22.0.1",
